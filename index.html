@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <label for="userInput">Введите ваш вопрос:</label>
-    <input maxlength=99 id="userInput" class="question" type="text">
-    <button onclick="getUserInput()">Отправить</button>
-        <p class="subtitle">Обязательно проверь свой вопрос на орфографию!</p>
-  
+    <div class="container">
+        <label class="label" for="userInput">Введите ваш вопрос:</label>
+        <input maxlength=99 id="userInput" class="input" type="text">
+        <button onclick="getUserInput()">Отправить</button>
+            <p class="subtitle">Обязательно проверь свой вопрос на орфографию!</p>
+    </div>
 </body>
 <script src="magic.js"></script>
 </html>
