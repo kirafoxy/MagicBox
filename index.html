@@ -8,10 +8,20 @@
 </head>
 <body>
     <div class="container">
-        <label class="label" for="userInput">Введите ваш вопрос:</label>
+        <h1>Магическая шкатулка ответов</h1>
+        <label class="title" for="userInput">Задай свой вопрос:</label>
         <input maxlength=99 id="userInput" class="input" type="text">
-        <button onclick="getUserInput()">Отправить</button>
-            <p class="subtitle">Обязательно проверь свой вопрос на орфографию!</p>
+        <button class="btn" onclick="getUserInput()">Отправить</button>
+
+        <div class="rules-wrapper">
+            <h3 class="subtitle">Немного правил нашей магии:</h3>
+                <ul class="rules-list">
+                    <li class="rule">Проверь свой вопрос на орфографию - 1 ошибка и ответ может измениться</li>
+                    <li class="rule">Задавать вопрос обязательно через частицу "ли". Пример: "Будет ли сегодня дождь?"</li>
+                    <li class="rule">Будь конкретней: пиши вопрос указав точные даты и имена.</li>
+                </ul>
+                <p class="attention">Главное: не увлекайся! Цифры и звезды не могут быть всегда точны - не стоит полагаться во всем на судьбу.</p>
+        </div>
     </div>
 </body>
 <script src="magic.js"></script>
