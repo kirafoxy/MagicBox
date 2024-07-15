@@ -88,3 +88,8 @@ function getUserInput() {
             break;
     }
 }
+
+const cleanInput = () => {
+    const getInput = document.getElementById("userInput");
+    getInput.value = '';                      
+  }
