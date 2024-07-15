@@ -30,51 +30,61 @@ function getUserInput() {
         case 1:
         case 10:
         case 19:
-            alert('Ты знаешь сам(а)')
+            document.getElementById('output').innerHTML = 'Ты знаешь сам(а)';
+
             break;
 
         case 2:
         case 11:
-            alert('Да!')
+         
+            document.getElementById('output').innerHTML = 'Да!';
             break;
             
         case 3:
         case 12:
-            alert('Нет!')
+         
+            document.getElementById('output').innerHTML = 'Нет!';
             break;
 
         case 4:
         case 13:
-            alert('Обязательно!')
+           
+            document.getElementById('output').innerHTML = 'Обязательно!';
             break;
 
         case 5:
         case 14:
-            alert('Возможно.')
+            
+            document.getElementById('output').innerHTML = 'Возможно.';
             break; 
             
         case 6:
         case 15:
-            alert('Будут препятсвия.')
+            
+            document.getElementById('output').innerHTML = 'Будут препятсвия.';
             break;
 
         case 7:
         case 16:
-            alert('Надейся и жди...')
+            
+            document.getElementById('output').innerHTML = 'Надейся и жди...';
             break;
 
         case 8:
         case 17:
-            alert('Да, но не сейчас.')
+         
+            document.getElementById('output').innerHTML = 'Да, но не сейчас.';
             break;
             
         case 9:
         case 18:
-            alert('Позже.')
+            
+            document.getElementById('output').innerHTML = 'Позже.';
             break;
 
         default:
-            alert('Тут даже звезды не знают...')
+           
+            document.getElementById('output').innerHTML = 'Тут даже звезды не знают...';
             break;
     }
 }

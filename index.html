@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MagicBook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+<div class="stars">
+    <div class="container twinkling">
         <h1>Магическая шкатулка ответов</h1>
-        <label class="title" for="userInput">Задай свой вопрос:</label>
-        <input maxlength=99 id="userInput" class="input" type="text">
-        <button class="btn" onclick="getUserInput()">Отправить</button>
-
+        <div class="input-wrapper">
+            <label class="title" for="userInput">Задай свой вопрос:</label>
+            <input maxlength=99 id="userInput" class="input" type="text">
+            <button class="btn" onclick="getUserInput()">Узнать ответ</button>
+        </div>
+        <div class="output-wrapper">
+            <p class="output">Ответ: <span id="output"></span></p>
+        </div>
         <div class="rules-wrapper">
             <h3 class="subtitle">Немного правил нашей магии:</h3>
                 <ul class="rules-list">
@@ -23,6 +31,7 @@
                 <p class="attention">Главное: не увлекайся! Цифры и звезды не могут быть всегда точны - не стоит полагаться во всем на судьбу.</p>
         </div>
     </div>
+</div>
 </body>
 <script src="magic.js"></script>
 </html>
