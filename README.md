@@ -1,19 +1,32 @@
+# Магическая шкатулка ответов
 
-<h2 align="center">Magic box of predictions.</h2>
+Небольшая страница, которая отвечает на вопрос одной короткой фразой. Открой `index.html` в браузере — сборка и сервер не нужны.
 
-<div align="center">
-<img src="https://github.com/kirafoxy/MagicBox/blob/main/images/video1764783765%20(online-video-cutter.com).gif?raw=true" alt="">
-</div>
-<p>But there is no magic here, only a program that knows the answer to your question (if you ask correctly)</p>
-<div display = flex; align="center" >
-    <img width="300px" src="https://github.com/kirafoxy/MagicBox/blob/main/images/FB2.jpg?raw=true" alt="">
-    <img width="300px" src="https://github.com/kirafoxy/MagicBox/blob/main/images/FB1.jpg?raw=true" alt="">
-</div>
-<p>“Under the hood” is the usual switch/case construction, which can independently carry out mathematical calculations and give you a prepared answer. You no longer need to mentally count the number of letters in a word. You can get an answer to a question in 1 second.</p>
+## Как спросить
 
-<div style= display:flex; align="center">
-    <img width="500px" src="https://github.com/kirafoxy/MagicBox/blob/main/images/ScreenJS.PNG?raw=true" alt="">
-    <img width="300px" src="https://github.com/kirafoxy/MagicBox/blob/main/images/ScreenJS2.PNG?raw=true" alt="">
-</div>
+1. Напиши вопрос в поле.
+2. Нажми «Узнать ответ». Enter в поле не отправляет вопрос: он переносит текст на следующую строку.
+3. Ответ откроется в отдельном окне. Закрыть его можно крестиком, кликом мимо окна или клавишей Escape.
 
-<h2 align="center">Just try!</h2>
+Пустое поле ответ не открывает.
+
+## Правила вопроса
+
+- Проверь орфографию: одна ошибка может изменить ответ.
+- Задавай вопрос через частицу «ли». Пример: «Будет ли сегодня дождь?»
+- Будь конкретней: указывай точные даты и имена.
+- Не стоит полагаться на ответ во всём. Цифры и звёзды не всегда точны.
+
+## Сохранённые ответы
+
+Каждая пара «вопрос — ответ» сохраняется в этом браузере и остаётся после обновления страницы.
+
+- Хранится не больше 10 последних записей. Более старая удаляется.
+- На экране видны 3 последние. Остальные открываются вертикальной прокруткой списка.
+- Кнопка «Стереть» очищает весь список.
+
+Записи не уходят на сервер и не видны другим людям. Они остаются только на этом устройстве, в этом браузере.
+
+## Как устроен ответ
+
+Программа убирает из вопроса пробелы и часть знаков, считает длину оставшегося текста и по ней выбирает готовую фразу. Поэтому разные формулировки одного и того же вопроса могут дать разный ответ.
